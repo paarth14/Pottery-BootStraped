@@ -1,0 +1,44 @@
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255 255 255);
+  font-size: 19px;
+}
+
+.special_opacity {
+  opacity: 0.8;
+}
+
+.special_opacity:hover {
+  opacity: 1;
+}
+
+.h5,
+h5 {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: 400;
+  line-height: 31px;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.purchasing_class {
+  padding-left: 5rem;
+  font-size: 28px;
+}
+
+.h2,
+h2 {
+  /* font-size: calc(1.325rem + .9vw); */
+  padding-bottom: 70px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: maroon;
+  font-size: 50px;
+}

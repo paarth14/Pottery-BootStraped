@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Pottery Website</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark text-white fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/logo_pot.jpg"
+            alt="pottery_logo"
+            style="height: 50px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#brands">Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#chart">Chart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-light text-white bg-dark"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item special_opacity active">
+          <img
+            src="./images/image-1.jpg"
+            class="d-block w-100 img-fluid"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              Clay can be recycled an infinite number of times, it never gets
+              spoilt
+            </h5>
+            <p>Infact, it gets better with age.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/image-2.jpg"
+            class="d-block w-100 img-fluid special_opacity"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ceramics and pottery are the same.</h5>
+            <p>
+              Ceramics is the medium of which clay is the key ingredient and
+              pottery is the hand-skill of working with clay.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./images/image-3.jpg"
+            class="d-block w-100 img-fluid special_opacity"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>
+              Maturing temperatures for ceramics lie between 900-1350 degrees
+              celsius.
+            </h5>
+            <p>That’s as hot as molten lava.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- TYPES -->
+    <div class="container-fluid" id="brands">
+      <div class="row pt-3 pb-4">
+        <div class="col-12">
+          <h1 class="text-center mb-5 mt-2">Types of Pottery</h1>
+        </div>
+      </div>
+
+      <!-- TYPES WITH IMAGES -->
+      <div class="row justify-content-evenly">
+        <div class="col-md-3 mb-4">
+          <img
+            src="./images/earthernware_image.jpg"
+            alt="earthernware_image"
+            style="height: 180px"
+            class="img-fluid rounded mx-auto d-block pb-3"
+          />
+          <h3 class="text-center pt-2">Earthenware</h3>
+          <p>
+            Earthenware is clay fired at relatively low temperatures of between
+            1,000 to 1,150 degrees. This results in a hardened but brittle
+            material which is slightly porous (small holes through which liquid
+            or air can go through), therefore can not be used to contain water.
+          </p>
+        </div>
+
+        <div class="col-md-3 mt-4 mb-3">
+          <img
+            src="./images/stoneware_new_image_two.jpg"
+            alt="stoneware_image"
+            style="height: 153px"
+            class="img-fluid rounded mx-auto d-block pb-1"
+          />
+          <h3 class="text-center pt-2">Stoneware</h3>
+          <p>
+            Stoneware is made from a particular clay which is fired at a higher
+            temperature of 1,200°C. This results in a more durable material,
+            with a denser, stone-like quality. The finished product will be
+            waterproof and unlike earthenware, does not need to be glazed.
+          </p>
+        </div>
+
+        <div class="col-md-3 mt-4 mb-3">
+          <img
+            src="./images/porcelain_image.jpg"
+            alt="porcelain_image"
+            style="height: 153px"
+            class="img-fluid rounded mx-auto d-block pb-1"
+          />
+          <h3 class="text-center pt-2">Porcelain</h3>
+          <p>
+            Porcelain comes from a refined clay which is fired at very high
+            temperatures of approximately 1,200–1,450°C. The result is an
+            extremely hard, shiny material often white and translucent in
+            appearance.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PURCHASING BAR -->
+    <div class="row justify-content-evenly pt-3 pb-5" id="chart">
+      <div class="col-md-5 pt-3">
+        <img
+          src="./images/pottery_bar.jpg"
+          alt="pottery_bar_image"
+          style="height: 539px; width: 536px"
+          class="img-fluid"
+        />
+      </div>
+      <div class="col-md-5 pt-3">
+        <h2>Purchasing Bar</h2>
+        <h5 class="mt-3">Earthenware</h5>
+        <div class="progress">
+          <div
+            class="progress-bar bg-success"
+            role="progressbar"
+            style="width: 25%"
+            aria-valuenow="25"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+
+        <h5 class="mt-3">Stoneware</h5>
+        <div class="progress">
+          <div
+            class="progress-bar bg-info"
+            role="progressbar"
+            style="width: 75%"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+
+        <h5 class="mt-3">Porcelain</h5>
+        <div class="progress">
+          <div
+            class="progress-bar bg-warning"
+            role="progressbar"
+            style="width: 65%"
+            aria-valuenow="65"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT US -->
+    <div
+      class="row justify-content-evenly pt-3 pb-5"
+      style="background-color: #f1f1f1"
+      id="contact"
+    >
+      <div class="col-md-5 mt-5">
+        <h3 class="mb-4">Contact Form</h3>
+
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Message</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-5 mt-5">
+        <h3 class="mb-4">Address</h3>
+
+        <p style="padding-right: 347px">Mercure Penrith, South Wales - 2745</p>
+        <p style="padding-right: 464px">
+          <i class="bi bi-telephone-fill text-danger"></i>+1 202-918-2132
+        </p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.0832793776244!2d150.6810362150565!3d-33.75851378068684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b128f50dd080b79%3A0x4f9ce167542abcfd!2sMercure%20Penrith!5e0!3m2!1sen!2sin!4v1645511836406!5m2!1sen!2sin"
+          style="width: 100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="row">
+      <div class="col-md-12">
+        <h6
+          class="text-center bg-dark text-white d-block"
+          style="height: 44px; padding-top: 12px; font-size: 17px"
+        >
+          Created with <i class="bi bi-heart-fill text-danger"></i> by Paarth
+        </h6>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP SCRIPT CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
