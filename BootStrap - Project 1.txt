@@ -12,6 +12,4 @@ Step 4) :- Now, it will be a 2 column. Left side --> Image || Right Side --> Ski
 
 Step 5) :- Now, it will be again a 2 column. Left Side --> Contact Form || Right Side --> Address with Google Maps.
 
-Steps 6) :- FAQ's Section.
-
-Step 7) :- Footer section with 3 columns.
+Step 6) :- Footer section with 3 columns.
